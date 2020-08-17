@@ -1,0 +1,8 @@
+.gitattributes text
+.gitignore text
+*.html text
+*.css text
+*.js text
+*.jpg binary
+*.gif binary
+*.png binary

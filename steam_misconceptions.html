@@ -10,6 +10,7 @@
         <meta property="og:type" content="article">
         <meta property="og:url" content="https://pooka.opensrc.club/steam_misconceptions.html">
         <meta property="og:image" content="https://pooka.opensrc.club/images/doors.jpg">
+        <meta property="og:description" content="A rundown of common misconceptions about steam that I run into.">
         <meta property="og:site_name" content="Pooka's Doors">
         <title>Common Misconceptions about Steam</title>
         <link rel="stylesheet" href="style.css">
@@ -25,16 +26,16 @@
         <h3>Miscellaneous stuff before we begin</h3>
         <p>If you doubt that I ever used the service, you are free to check my profile <a href="https://steamcommunity.com/id/pookamustard/" target="_blank">here</a> (opens in a new tab). You'll find that I have a lot of history with the program and a decent amount of play time, qualifying me to talk about the topic.</p>
         <p>All of this information was checked with the client built June 17, 2019.</p>
-        <p><img src="images/steam_about.png" alt="Built on June 17, 2019 at 16:34:13, Steam API is v018, Steam package versions at 1560817063"></p>
+        <p><img class="center" src="images/steam_about.png" alt="Built on June 17, 2019 at 16:34:13, Steam API is v018, Steam package versions at 1560817063"></p>
         <hr>
         <h2><b>Steam backups can be installed offline.</b></h2>
         <p><b>No, they can't.</b></p>
         <p>In offline mode, the context menu for an installed game has "<i class="code">Backup Game Files...</i>" greyed out, showing that Valve really didn't intend to let you backup your games offline. But because it's Valve and inconsistency is their #2 success, you can still backup by going through "<i class="code">Properties</i>" (again through the context menu), "<i class="code">Local Files</i>" and then clicking "<i class="code">Backup Game Files...</i>" there.
         <p class="mini">(I swear that when hovering over that button in offline mode, sometimes it doesn't light up, implying there was an attempt to disable it?)</p>
         <p>Now, if you attempt to restore a game while in offline mode, you'll get greeted with this nice little message.</p>
-        <img src="images/offline_backup_message.png" alt="Steam message saying &quot;Games cannot be installed when Steam is in Offline Mode. Exit and Restart Steam, and choose 'Go Online'.&quot;, with the only button being OK.">
+        <img class="center" src="images/offline_backup_message.png" alt="Steam message saying &quot;Games cannot be installed when Steam is in Offline Mode. Exit and Restart Steam, and choose 'Go Online'.&quot;, with the only button being OK.">
         <p>It is obvious that you can forget about ever relying on your backups while in Steam's offline mode. Heck, if you look at the downloads screen while restoring your game backup outside of offline mode, you will notice that Steam will download data BEFORE it begins the local restore operation, as shown in the next picture, where network activity was present before there was disk activity.<p>
-        <img src="images/steam_backup_attempt.jpg" alt="Steam shows network activity before the installation and thus, the disk activity proceeds.">
+        <img class="center" src="images/steam_backup_attempt.jpg" alt="Steam shows network activity before the installation and thus, the disk activity proceeds.">
         <h3>Solutions to bypass this problem</h3>
         <p>If you want to have backups that can properly install offline, Steam will not provide them for you. You should be looking for DRM-free games, which you can buy from GOG.com (recommended), itch.io  or Humble Store, among others. They won't integrate with Steam, but that's the top selling point here.</p>
         <p>Otherwise, backup your Steam games by archiving them manually through programs like 7-zip or WinRAR, along with a copy of your game's appmanifest file (they're named "<i class="code">appmanifest_[game_app_id]</i>", easiest way to obtain the appID is by going to your game's "<i class="code">Properties</i>" menu and clicking "<i class="code">Create Desktop Shortcut</i>", then inspecting the URL of your created shortcut through your system's Properties view, the last number is your appID), and restore them to your steamapps directory when you want them back again, followed by a restart of the client.</p>

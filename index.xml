@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pooka&#39;s Doors</title>
+    <link>https://pooka.opensrc.club/</link>
+    <description>Recent content on Pooka&#39;s Doors</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 16 Aug 2022 21:21:18 +0300</lastBuildDate><atom:link href="https://pooka.opensrc.club/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Disappearance of Digital Manuals</title>
+      <link>https://pooka.opensrc.club/manuals_rant.html</link>
+      <pubDate>Tue, 16 Aug 2022 21:21:18 +0300</pubDate>
+      
+      <guid>https://pooka.opensrc.club/manuals_rant.html</guid>
+      <description>I&#39;m a weirdo, okay. I buy used PS3 games off the local mall next to my workplace. It&#39;s cheaper than I expected and fun to build a collection. The problem is they&#39;re games for the PS3, a console that has a successor which has a successor, it&#39;s pretty old, Sony almost axed the digital store for it, etc.
+Now I bought a used copy of Sonic Generations, and it has a manual.</description>
+    </item>
+    
+    <item>
+      <title>Common Misconceptions about Steam</title>
+      <link>https://pooka.opensrc.club/steam_misconceptions.html</link>
+      <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://pooka.opensrc.club/steam_misconceptions.html</guid>
+      <description>Steam is a program that is used by nearly every one who plays games on PC. Holdouts like me are rare, and in the pursuit of game journalism I was pretty much doomed to return to the program sooner or later if I wanted to most work with PC games. When a game is headed to PC, it is assumed by default to sell on Steam, and only recently was that notion challenged thanks to Epic, which is pretty much hated because in my opinion, it is not Steam, and the whole paying for exclusivity reason for hating it doesn&#39;t seem sincere to me in an industry where exclusivity is the norm.</description>
+    </item>
+    
+  </channel>
+</rss>

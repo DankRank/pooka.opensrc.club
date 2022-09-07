@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A rundown of common misconceptions about steam that I run into.">
+        <meta name="keywords" content="steam,epic games,drm,digital distribution,digital preservation,offline mode">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Common Misconceptions about Steam" />
+<meta property="og:description" content="A rundown of common misconceptions about steam that I run into." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pooka.opensrc.club/steam_misconceptions.html" /><meta property="og:image" content="https://pooka.opensrc.club/images/doors.jpg"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-07-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-07-07T00:00:00+00:00" /><meta property="og:site_name" content="Pooka&#39;s Doors" />
+
+
+        <title>Common Misconceptions about Steam</title>
+        <link rel="stylesheet" href="/style.css">
+		<link rel="alternate" type="application/rss+xml" title="Pooka&#39;s Doors" href="https://pooka.opensrc.club/index.xml">
+    </head>
+    <body>
+        <h1 class="title"><b>Common Misconceptions about Steam </b></h1>
+        <p class="minititle">Last updated: July 7, 2019</p>
+        <nav>
+            <a href="/">&lt;&lt; Return to start page</a>
+        </nav>
+                <p>Steam is a program that is used by <i>nearly</i> every one who plays games on PC. Holdouts like me are rare, and in the pursuit of game journalism I was pretty much doomed to return to the program sooner or later if I wanted to most work with PC games. When a game is headed to PC, it is assumed by default to sell on Steam, and only recently was that notion challenged thanks to Epic, which is pretty much hated because in my opinion, it is not Steam, and the whole paying for exclusivity reason for hating it doesn't seem sincere to me in an industry where exclusivity is the norm.</p>
+        <p>Yet, I get the feeling as if most people who argue in favor of Steam are arguing with misconceptions more than anything, making it hard to actually counter their points reasonably. I have thus dedicated this webpage to counter some of the points that are raised time and time again but don't seem to hold any ground in reality.</p>
+        <h3>Miscellaneous stuff before we begin</h3>
+        <p>If you doubt that I ever used the service, you are free to check my profile <a href="https://steamcommunity.com/id/pookamustard/" target="_blank">here</a> (opens in a new tab). You'll find that I have a lot of history with the program and a decent amount of play time, qualifying me to talk about the topic.</p>
+        <p>All of this information was checked with the client built June 17, 2019.</p>
+        <p><img class="center" src="images/steam_about.png" alt="Built on June 17, 2019 at 16:34:13, Steam API is v018, Steam package versions at 1560817063"></p>
+        <hr>
+        <h2><b>Steam backups can be installed offline.</b></h2>
+        <p><b>No, they can't.</b></p>
+        <p>In offline mode, the context menu for an installed game has "<i class="code">Backup Game Files...</i>" greyed out, showing that Valve really didn't intend to let you backup your games offline. But because it's Valve and inconsistency is their #2 success, you can still backup by going through "<i class="code">Properties</i>" (again through the context menu), "<i class="code">Local Files</i>" and then clicking "<i class="code">Backup Game Files...</i>" there.
+        <p class="mini">(I swear that when hovering over that button in offline mode, sometimes it doesn't light up, implying there was an attempt to disable it?)</p>
+        <p>Now, if you attempt to restore a game while in offline mode, you'll get greeted with this nice little message.</p>
+        <img class="center" src="images/offline_backup_message.png" alt="Steam message saying &quot;Games cannot be installed when Steam is in Offline Mode. Exit and Restart Steam, and choose 'Go Online'.&quot;, with the only button being OK.">
+        <p>It is obvious that you can forget about ever relying on your backups while in Steam's offline mode. Heck, if you look at the downloads screen while restoring your game backup outside of offline mode, you will notice that Steam will download data BEFORE it begins the local restore operation, as shown in the next picture, where network activity was present before there was disk activity.<p>
+        <img class="center" src="images/steam_backup_attempt.jpg" alt="Steam shows network activity before the installation and thus, the disk activity proceeds.">
+        <h3>Solutions to bypass this problem</h3>
+        <p>If you want to have backups that can properly install offline, Steam will not provide them for you. You should be looking for DRM-free games, which you can buy from GOG.com (recommended), itch.io  or Humble Store, among others. They won't integrate with Steam, but that's the top selling point here.</p>
+        <p>Otherwise, backup your Steam games by archiving them manually through programs like 7-zip or WinRAR, along with a copy of your game's appmanifest file (they're named "<i class="code">appmanifest_[game_app_id]</i>", easiest way to obtain the appID is by going to your game's "<i class="code">Properties</i>" menu and clicking "<i class="code">Create Desktop Shortcut</i>", then inspecting the URL of your created shortcut through your system's Properties view, the last number is your appID), and restore them to your steamapps directory when you want them back again, followed by a restart of the client.</p>
+        <hr>
+        <h2><b>You cannot disable Steam client auto-updates.</b></h2>
+        <b>Thankfully this is false.</b>
+        <p>One reason I hate mandatory "gaming clients" is that their frequent updates means my ability to play games is more often than not disrupted because either the client itself is updating or the game I'm trying to run has an update and I can't play it while the update is on-going.</p>
+        <p>I've seen a Reddit thread asking how to disable client updates, but everyone responded by simply saying they couldn't. You <b>can disable client updates</b> by creating a new file called "<i class="code">steam.cfg</i>" and pasting this single line into the file:</p>
+        <div class="codediv"><p><i class="code">BootStrapperInhibitAll=enable</i></p></div>
+        <p>Save the file, and copy it to your Steam directory. As long as you hold on to your copy of Steam, and until Valve suddenly disallows older versions from communicating with steam, you will be fine. Of course, things that are server-sided will continue updating no matter what you do.</p>
+        <hr>
+        <h2><b>Steam can't delete your account! Closest you'll get is a store ban!</b></h2>
+        <p><b>Uhh yes, accounts can get <i>deleted entirely</i> and that's as recent as 2018.</b></p>
+        <p><a href="https://www.gog.com/forum/general/the_steam_support_has_deleted_or_renamed_my_accounts_login" target="_blank">Here's the case in question.</a></p>
+        <p>You may argue that this user has caused damages to Valve and kept testing their patience after being repeatedly warned against doing so, but the point still stands: his purchases were denied and just disappeared. And thanks to the DRM, he cannot verify he once owned his purchases because he longer has an account to verify these purchases!</p>
+        <p>It's the equivalent of being banned from a WalMart, followed by their staff taking away all your purchases by force, including say, your televisions, your phones, your furniture, etc.</p>
+        <p>Generally not doing any actions that put your account in jeopardy is a good start, but you should still worry about account deletions. It can happen to you by accident or with malice, either by a disgruntled Valve employee or a hacker gaining access to the company's databases. <b>By having your account deleted this way, your installed games will not work because you can't verify you own them!</b></p>
+
+        <nav>
+            <a href="/">&lt;&lt; Return to start page</a>
+        </nav>
+        <footer class="mini">
+            <hr>
+            Copyright Pooka, 2019. All rights reserved.
+        </footer>
+    </body>
+</html>

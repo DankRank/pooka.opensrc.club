@@ -1,0 +1,13 @@
+body {color: #1f555f; padding:8px; background-color:#DCD0FF; font-family: Verdana; margin-bottom: 50px; }
+html {min-height: 100%; position: relative; padding-top: 0;}
+footer {position: absolute; bottom: 8px; overflow: hidden; height: 50px; text-align: center; margin: auto;}
+* { box-sizing: border-box; }
+img.center {margin:0px auto; display:block; max-width:100%;}
+.frontimage {margin:0px auto; display:block; max-width: 250px;}
+li {list-style-type: square;}
+.minititle {font-size: .75em; margin-top: 0px; margin-bottom: 0px;}
+.title {margin-bottom: 0; margin-top: 0;}
+.titlelarge {font-size: 3em; text-align: center; margin-top: 0; margin-bottom: 0;}
+.mini {font-size: .75em;}
+.code {font-family: Courier New; font-size: 15px; }
+.codediv {border: solid 1px black; background-color: white; padding-left: 16px; padding-right: 16px; padding-top: 0px; padding-bottom: 0px; display: inline-block; overflow-wrap: anywhere;}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html {{ with .Language.Lang }}lang="{{.}}" {{ end -}}
+    prefix="og: http://ogp.me/ns#{{ if .IsPage }} article: http://ogp.me/ns/article#{{ end }}">
+    <head>
+        <meta charset="utf-8">{{ with .Site.Author.name }}
+        <meta name="author" content="{{ . }}">{{ end }}
+        <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">{{ with .Keywords }}
+        <meta name="keywords" content="{{ delimit . "," }}">{{ end }}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {{ template "_internal/opengraph.html" . }}
+        <title>{{ block "title" . }}{{ with .Title }}{{.}}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}</title>
+        <link rel="stylesheet" href="{{ "style.css" | relURL }}">
+		<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ (.Site.Home.OutputFormats.Get "RSS").Permalink }}">
+    </head>
+    <body>
+{{- block "main" . }}{{ end }}
+    </body>
+</html>

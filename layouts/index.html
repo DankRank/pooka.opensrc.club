@@ -1,0 +1,31 @@
+{{ define "main" }}
+        <img src="{{ "images/doors.jpg" | relURL }}" class="frontimage" alt="Pooka's Doors Front Image">
+        <h1 class="titlelarge">{{ .Site.Title }}</h1>
+        <hr>
+        <p>Welcome to my realm. Click on any of the links below to navigate my views.</p>
+        <ul>
+            {{- range where .Site.RegularPages "Section" "post" }}
+            <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                {{- if not .Next -}}
+                    <img src="{{ "images/new.png" | relURL }}" width="31" height="12" alt="(NEW)">
+                {{- end }}
+            </li>
+            {{- end }}
+            <li>
+                This space is left blank
+            </li>
+            <li>
+                More space left blank
+            </li>
+            <li>
+                I'll stop now.
+            </li>
+        </ul>
+        <footer class="mini">
+            <hr>
+            Copyright Pooka, 2019-{{ now.Format "2006" }}. All rights reserved.
+            <br>
+            I disown the image
+        </footer>
+{{- end }}

@@ -1,0 +1,8 @@
+baseURL = 'https://pooka.opensrc.club/'
+languageCode = 'en'
+title = "Pooka's Doors"
+params.title = "Pooka's Doors"
+params.author.name = 'Pooka'
+params.description = "Pooka's webpage, nothing more, nothing less."
+params.images = ['images/doors.jpg']
+disableKinds = ['section', 'taxonomy', 'term']

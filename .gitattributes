@@ -1,7 +1,10 @@
 CNAME text
 .gitattributes text
 .gitignore text
+*.toml text
 *.html text
+*.md text
+*.xml text
 *.css text
 *.js text
 *.jpg binary

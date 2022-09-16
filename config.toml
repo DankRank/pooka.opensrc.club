@@ -6,3 +6,4 @@ params.author.name = 'Pooka'
 params.description = "Pooka's webpage, nothing more, nothing less."
 params.images = ['images/doors.jpg']
 disableKinds = ['section', 'taxonomy', 'term']
+markup.goldmark.renderer.unsafe = true

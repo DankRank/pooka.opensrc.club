@@ -4,7 +4,7 @@
         <hr>
         <p>Welcome to my realm. Click on any of the links below to navigate my views.</p>
         <ul>
-            {{- range where .Site.RegularPages "Section" "post" }}
+            {{- range where (where .Site.RegularPages "Section" "post") "Params.unlisted" "!=" true }}
             <li>
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                 {{- if not .Next -}}

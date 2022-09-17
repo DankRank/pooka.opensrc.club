@@ -13,7 +13,7 @@ To investigate this whole mess, I downloaded the music files, ripped straight fr
 
 Now, by hex editing the Medieval Madness tracks (gauntl2l.vag and gauntl2r.vag) and comparing it with any other track, we can see why MM is special. By setting the editor to display 16 bytes per row, the track for Arctic Antics has several rows of the 0C byte followed by 15 bytes of 00, right off the bat at address 00000040. Medieval Madness on the other hand doesn't have any 0C byte rows. It just gets into the music data immediately.
 
-<ul style="display:flex;flex-wrap:wrap;justify-content:space-around;justify-content:space-evenly;padding:0">
+<ul style="display:flex;flex-wrap:wrap;justify-content:space-around;justify-content:space-evenly;padding:0;overflow:auto">
 <li style="display:block;text-align:center">
 artical.vag hexdump
 <pre><code>00000000  56 41 47 70 00 00 00 20  00 00 00 00 00 2f 2c 60  |VAGp... ...../,`|
